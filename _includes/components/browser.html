@@ -1,0 +1,34 @@
+<figure class="browser">
+    <nav class="browser__chrome">
+        <ul class="browser__list">
+            <li class="browser__item">
+                <div class="browser__blob browser__blob--close">&nbsp;</div>
+            </li>
+            <li class="browser__item">
+                <div class="browser__blob browser__blob--minimize">&nbsp;</div>
+            </li>
+            <li class="browser__item">
+                <a href="{{ include.maximize }}" class="browser__blob browser__blob--maximize">&nbsp;</a>
+            </li>
+        </ul>
+
+        <div class="browser__omnibar">
+            <a href="{{ include.url }}">{{ include.url }}</a>
+        </div>
+    </nav>
+
+    <div class="browser__body">
+        {% if include.videos %}
+            <video autoplay loop muted>
+                {% assign videos = include.videos | split: ',' %}
+                {% for video in videos %}
+                    {% assign vid = video | split: ':' %}
+                    <source type="{{ vid[0] }}" src="{{ vid[1] }}">
+                {% endfor %}
+                <img class="browser__img" src="{{ include.src }}" alt="{{ include.alt }}">
+            </video>
+        {% else %}
+            <img class="browser__img" src="{{ include.src }}" alt="{{ include.alt }}">
+        {% endif %}
+    </div>
+</figure>

@@ -1,0 +1,236 @@
+---
+layout: default
+title: Résumé
+permalink: /resume/
+---
+
+{% assign coding_for = site.time | date: '%Y' | minus: site.coding_since %}
+
+<div class="wrapper">
+    <section class="chapter"><!--
+        --><header class="chapter__header">
+            <h1 class="heading kilo">Hello, I'm Aaron.</h1>
+        </header><!--
+
+        --><div class="chapter__content">
+            <div class="chapter__intro">
+                <p class="delta">I’m a back-to-front-end developer from sunny Barnsley,
+                    South Yorkshire. I’m unmeasurably motivated, able to work under
+                    pressure, think outside of the box and provide software solutions
+                    that are robust and future proof.</p>
+
+                <p class="delta">I make the www fun.</p>
+            </div>
+
+            <p>n.b. This résumé is out of date by a good number of years.</p>
+
+            <h3>I'm a back-end developer</h3>
+            <p>Over the past {{ coding_for }} years, I have built up a good, solid working knowledge of Object-oriented
+                PHP and MySQL. I currently code with the <abbr title="Model, View, Controller">MVC</abbr>
+                framework <a href="http://kohanaframework.org/" target="_blank">Kohana</a>
+                as a part of a team of 3 at work during the day, and (usually) the
+                <a href="http://laravel.com/" target="_blank">Laravel</a> framework by night.</p>
+
+            <p>I've touched <a href="http://codeigniter.com/" target="_blank">Codeigniter</a>, <a href="#TODO">Slim</a>, <a href="#TODO">Silex</a> &amp;
+                <a href="http://symfony.com/" target="_blank">Symfony</a> (to name a few)
+                and started writing my own framework, <a href="https://github.com/pancakephp" target="_blank">Pancake</a>,
+                to gave me a much deeper understanding of the underlying technologies of PHP and the available frameworks.</p>
+
+            <p>I follow best practices, including; compliance with the
+                <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md" target="_blank">PSR-2 coding standard</a>,
+                adhere to <a href="http://en.wikipedia.org/wiki/Service_layers_pattern">SOLID</a> principles, leverage
+                <a href="http://en.wikipedia.org/wiki/Dependency_injection">Dependency Injection</a> and 
+                <a href="http://en.wikipedia.org/wiki/Service_layers_pattern">Service layers</a> patterns.</p>
+
+            <p>Essentially, I write DRY reusable, testable &amp; decoupled code. I'm obsessed with learning new things and I'm able to pick up new 
+                languages, abilities, patterns, principles and styles very quickly and easily.
+            </p>
+
+            <h5>Skills</h5>
+
+            <ul class="list-inline">
+                <li><strong><abbr title="Object-oriented PHP">PHP</abbr></strong></li>
+                <li><strong>MySQL</strong></li>
+                <li><strong>MVC</strong></li>
+                <li><strong>SOLID</strong></li>
+                <li><strong>ORM</strong></li>
+                <li><strong>Kohana</strong></li>
+                <li><strong>Laravel</strong></li>
+                <li><strong>M/LAMP</strong></li>
+                <li><strong>REST</strong></li>
+                <li><strong><abbr title="Design, Implementation &amp; usage">API</abbr></strong></li>
+                <li><strong><abbr title="Command-line interface">CLI</abbr></strong></li>
+                <li><strong>Git</strong></li>
+                <li><strong>Template Engines</strong></li>
+                <li><strong>SSH</strong></li>
+                <li><strong>PHPUnit</strong></li>
+                <li><strong>Mockery</strong></li>
+                <li>Codeception</li>
+                <li>WebSockets</li>
+                <li><abbr title="Database">DB</abbr> Design</li>
+                <li><abbr title="Database">DB</abbr> Query Optimization</li>
+                <li><abbr title="Test-driven development">TDD</abbr></li>
+                <li>NodeJS</li>
+            </ul>
+
+            <h3>I'm a front-end developer</h3>
+            <p>I see myself primarily as a back-end developer, with the added benefit of being highly
+                skilled in front-end development too.</p>
+
+            <p>I strive for <a href="http://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Faaronlord.is%2Ffor-hire%2F" target="_blank">fast</a>, clean, 
+                semantic HTML5 responsively styled with advanced CSS3 techniques to perfectly match designs. I write modular,
+                <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" title="Block, Element, Modifier" target="_blank">BEM</a>
+                style CSS compiled with <a href="http://sass-lang.com/" target="_blank">SASS</a> &amp; <a href="http://compass-style.org/" target="_blank">Compass</a>.</p>
+
+            <p>As well as the typical Javascript goodness that websites have these days, I also love developing
+                full, one-page applications in <a href="http://coffeescript.org/" target="_blank">Coffeescript</a> with the
+                <a href="http://backbonejs.org/" target="_blank">Backbone</a> (or
+                <a href="http://marionettejs.com/" target="_blank">Marionette</a>) framework.</p>
+
+            <h5>Skills</h5>
+
+            <ul class="list-inline">
+                <li><strong>HTML5</strong></li>
+                <li><strong>CSS3</strong></li>
+                <li><strong>SASS &amp; Compass</strong></li>
+                <li><strong><abbr title="Javascript">JS</abbr></strong></li>
+                <li><strong>AJAX</strong></li>
+                <li><strong>jQuery</strong></li>
+                <li><strong>Underscore</strong></li>
+                <li><strong>Backbone</strong></li>
+                <li><strong>Marionette</strong></li>
+                <li><strong>RequireJS</strong></li>
+                <li>Responsive</li>
+                <li><strong>Modernizr</strong></li>
+                <li><strong>Grunt</strong></li>
+                <li></strong>Coffeescript</strong></li>
+                <li><abbr title="CSS framework">Bootstrap</abbr></li>
+                <li><abbr title="CSS framework">Foundation</abbr></li>
+            </ul>
+
+            <h3>I'm Experienced</h3>
+            <p>I'm the guy who codes at weekends because <strong>it's fun</strong>. I've been learning
+                relentlessly for the past 6 years and absolutely love what I do. Here's a taster of what
+                I've been up to:</p>
+        </div><!--
+
+        --><div class="chapter__meta">
+            {% include testimonials/little-yellow-duck.html %}
+            {% include testimonials/tutora.html %}
+        </div><!--
+
+        --><div class="chapter__articles">
+            <article class="article"><!--
+                --><header class="article__header">
+                    <h2>Tutora</h2>
+                </header><!--
+
+                --><div class="article__content">
+                    {% include components/browser.html videos="video/webm:/videos/project-tutora/search.webm,video/mp4:/videos/project-tutora/search.mp4" src="/img/tutora.jpg" alt="Tutora" url="https://tutora.co.uk/" %}
+
+                    <p>Tutora connects students looking for private tuition with talented and trusted tutors.</p>
+
+                    <p>Focusing on ease of use for both student and tutor, the website features bespoke search,
+                        messaging, booking, payment and review systems.</p>
+
+                    <p>Tutora was, and still is, huge fun to work on. I'm proud of it.</p>
+
+                    {% include testimonials/tutora.html %}
+                </div><!--
+
+                --><div class="article__meta">
+                    <dl>
+                        <dt>status</dt>
+                        <dd>live</dd>
+
+                        <dt>designer</dt>
+                        <dd><a href="#">Adam Clark</a> & myself</dd>
+
+                        <dt>url</dt>
+                        <dd><a href="#">http://tutora.co.uk/</a></dd>
+                    </dl>
+                </div><!--
+            --></article>
+
+
+            <article class="article"><!--
+                --><header class="article__header">
+                    <h2>Keystrokes</h2>
+                </header><!--
+
+                --><div class="article__content">
+                    {% include components/browser.html videos="video/webm:/videos/project-keystrokes/overview.webm,video/mp4:/videos/project-keystrokes/overview.mp4" src="/img/keystrokes.jpg" alt="Keystrokes" url="http://alpha.keystrok.es/" %}
+
+                    <p>Touch typing is amazing. Keystrokes is something I'm working on to teach it to the masses in a fun way.</p>
+
+                    <p><a href="#">Learn</a> the correct finger positions, <a href="#">practice</a> 'real world' sentences solo or
+                        <a href="#">race</a> against others from around the world in realtime.</p>
+
+                    <p>We spend far too long on computers these days to still be hunt and pecking our way through
+                        documents, emails, IMs, etc.</p>
+                </div><!--
+
+                --><div class="article__meta">
+                    <dl>
+                        <dt>status</dt>
+                        <dd><abbr title="alpha">in development</abbr></dd>
+
+                        <dt>designer</dt>
+                        <dd><a href="https://twitter.com/kralcmada">Adam Clark</a> & myself</dd>
+
+                        <dt>urls</dt>
+                        <dd><a href="#">http://keystrok.es/</a></dd>
+                        <dd><a href="#">http://alpha.keystrok.es/</a></dd>
+                    </dl>
+                </div><!--
+            --></article>
+
+            <article class="article chapter__article"><!--
+                --><header class="article__header">
+                    <h2>Laroute</h2>
+                </header><!--
+
+                --><div class="article__content">
+                    {% include components/browser.html src="/img/laroute.jpg" alt="Laroute" url="https://github.com/aaronlord/laroute/" %}
+
+                        <p>Laravel has some pretty sweet helper functions for generating urls/links and its auto-json-magic makes it building
+                            APIs super easy. It's the go-to choice for building single-page js apps for me and many others, but routing can
+                            quickly become a bit of a pain.</p>
+
+                        <p>This package allows you to port your routes over to JavaScript, and gives us a bunch of very familiar helper
+                            functions to use.</p>
+                </div><!--
+
+                --><div class="article__meta">
+                    <dl>
+                        <dt>installs</dt>
+                        <dd><a href="https://packagist.org/packages/lord/laroute/stats">10,000+</a></dd>
+
+                        <dt>stars</dt>
+                        <dd><a href="https://github.com/aaronlord/laroute">200+</a></dd>
+
+                        <dt>url</dt>
+                        <dd><a href="https://github.com/aaronlord/laroute">https://github.com/aaronlord/laroute</a></dd>
+
+                        <dt>fame</dt>
+                        <dd><a href="https://twitter.com/taylorotwell/status/446829096018796546">Taylor, the creator of Laravel</a></dd>
+                    </dl>
+                </div><!--
+            --></article>
+        </div><!--
+
+        --><div class="chapter__content">
+            <h3>I'm <a href="http://aaronlord.is/contactable" target="_blank">Contactable</a></h3>
+
+            <dl>
+                <dt>Email</dt>
+                <dd><a href="javascript:window.location.href = 'mailto:' + ['hire','aaron.codes'].join('@')">hire [at] aaron [dot] codes</a></dd>
+
+                <dt>Phone</dt>
+                <dd><a href="tel:07446994968">07446994968</a></dd>
+            </dl>
+
+            <h5>Thank you.</h5>
+        </div><!--
+    --></div>
+</div>

@@ -1,0 +1,29 @@
+---
+layout: default
+selector: testimonials
+title: Testimonials
+permalink: /testimonials/
+---
+
+<div class="wrapper">
+    <section class="chapter"><!--
+        --><header class="chapter__header">
+            <h1 class="heading kilo">Testimonials</h1>
+        </header><!--
+
+        --><div class="chapter__content">
+            <div class="chapter__intro u-mb+">
+                <p class="delta">People sometimes say nice things about me and my rockin' websites.</p>
+            </div>
+
+            {% include testimonials/tutora.html excerpt="false" %}
+            {% include testimonials/little-yellow-duck.html excerpt="false" %}
+            {% include testimonials/cookit.html excerpt="false" %}
+        </div><!--
+
+        --><div class="chapter__meta">
+            <p>Like what you see?<br>
+                <a href="/for-money">Hire me.</a></p>
+        </div><!--
+    --></div>
+</div>

@@ -1,0 +1,68 @@
+.site-nav {
+    border-bottom: 1px solid $color-ui;
+    overflow: hidden;
+    text-align: center;
+    background: $color-white;
+
+    @include media-query('tablet') {
+        text-align: left;
+    }
+}
+    .site-nav__list {
+        @extend %pack;
+        @extend %pack--auto;
+        margin:  0;
+        padding: 0;
+
+        @include media-query('tablet') {
+            display: initial;
+            float: right;
+            width: auto;
+        }
+    }
+        .site-nav__item {
+            @extend %pack__item;
+
+            @include media-query('tablet') {
+                display: inline-block;
+            }
+        }
+            .site-nav__link,
+            .site-nav__brand {
+                padding: $spacing-unit--small $spacing-unit--tiny;
+
+                @include media-query('tablet') {
+                    padding: $spacing-unit--small;
+                }
+            }
+
+            .site-nav__link {
+                @include font-size(14px);
+                border-bottom: 1px solid transparent;
+                display: block;
+                color: $color-headings;
+
+                &:hover,
+                .page--home     &.site-nav__home,
+                .page--work     &.site-nav__work,
+                .page--services &.site-nav__services,
+                .page--blog     &.site-nav__blog,
+                .page--contact  &.site-nav__contact,
+                .page--hire     &.site-nav__hire {
+                    border-bottom-color: $color-brand;
+                }
+
+                @include media-query('tablet') {
+                    @include font-size($inuit-base-font-size);
+                }
+            }
+
+            .site-nav__brand {
+                padding-left: 0;
+                padding-bottom: 0;
+
+                @include media-query('tablet') {
+                    @include font-size(18px);
+                    display: inline-block;
+                }
+            }

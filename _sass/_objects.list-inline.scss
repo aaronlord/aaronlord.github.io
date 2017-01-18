@@ -1,0 +1,9 @@
+.list-inline--slash-delimited {
+    > li + li {
+        &:before {
+            content: '/';
+            color: $color-ui;
+            margin: 0 $spacing-unit--small;
+        }
+    }
+}

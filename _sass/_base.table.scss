@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+}
+    tr:nth-child(2n) {
+        background: $color-ui--light;
+    }
+
+    th,
+    td {
+        border: 1px solid $color-ui;
+        padding: 6px 13px;
+    }

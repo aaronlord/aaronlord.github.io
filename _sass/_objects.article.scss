@@ -1,0 +1,49 @@
+.article {
+    @extend %layout;
+}
+    .article__header,
+    .article__content,
+    .article__meta {
+        @extend %layout__item;
+    }
+
+    .article__header,
+    .article__content {
+        @include media-query('tablet') {
+            width: $eleven-twelfths;
+        }
+
+        @include media-query('tablet-hd') {
+            width: $ten-twelfths;
+        }
+
+        @include media-query('desk') {
+            width: $eight-twelfths;
+        }
+
+        @include media-query('desk-hd') {
+            width: $seven-twelfths;
+        }
+    }
+
+    .article__header {
+
+    }
+
+    .article__content {
+
+    }
+
+    .article__meta {
+        @include media-query('tablet') {
+            width: $eleven-twelfths;
+        }
+
+        @include media-query('desk') {
+            width: $four-twelfths;
+        }
+
+        @include media-query('desk-hd') {
+            width: $five-twelfths;
+        }
+    }

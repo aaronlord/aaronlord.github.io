@@ -1,0 +1,12 @@
+.list-ui {
+    &,
+    & > li,
+    & > .list-ui__item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .heading {
+        margin: 0 0 $spacing-unit--tiny;
+    }
+}

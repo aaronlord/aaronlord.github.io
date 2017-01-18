@@ -1,0 +1,72 @@
+.chapter {
+    @extend %layout;
+}
+    .chapter__header,
+    .chapter__content,
+    .chapter__meta,
+    .chapter__articles {
+        @extend %layout__item;
+    }
+
+    .chapter__header,
+    .chapter__content,
+    .chapter__meta {
+        @include media-query('tablet') {
+            width: $eleven-twelfths;
+        }
+
+        @include media-query('tablet-hd') {
+            width: $ten-twelfths;
+        }
+    }
+
+    .chapter__header,
+    .chapter__content {
+        @include media-query('desk') {
+            width: $eight-twelfths;
+        }
+
+        @include media-query('desk-hd') {
+            width: $seven-twelfths;
+        }
+    }
+
+    .chapter__header {
+        margin-bottom: $spacing-unit;
+
+        .heading {
+            margin-top: 0;
+        }
+    }
+
+    .chapter__content {
+
+    }
+        .chapter__intro {
+
+        }
+
+    .chapter__articles {
+
+    }
+        .chapter__article {
+            margin-bottom: $spacing-unit;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    .chapter__meta {
+        margin-top: $spacing-unit--large;
+
+        @include media-query('desk') {
+            width: $three-twelfths;
+            margin-left: $one-twelfth;
+            margin-top: 0;
+        }
+
+        @include media-query('desk-hd') {
+            width: $four-twelfths;
+        }
+    }

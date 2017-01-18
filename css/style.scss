@@ -1,0 +1,106 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+//
+// SETTINGS
+//
+@import "../bower_components/inuit-defaults/settings.defaults";
+@import "../bower_components/inuit-responsive-settings/settings.responsive";
+@import "settings.responsive";
+@import "settings.spacing-units";
+@import "settings.colors";
+@import "settings.widths";
+
+
+//
+// TOOLS
+//
+@import "../bower_components/inuit-functions/tools.functions";
+@import "../bower_components/inuit-mixins/tools.mixins";
+@import "../bower_components/inuit-tools-widths/tools.widths";
+@import "../bower_components/inuit-responsive-tools/tools.responsive";
+@import "tools.mixins";
+
+
+//
+// GENERIC
+//
+@import "../bower_components/inuit-normalize/generic.normalize";
+@import "../bower_components/inuit-box-sizing/generic.box-sizing";
+
+
+//
+// BASE
+//
+@import "../bower_components/inuit-page/base.page";
+@import "../bower_components/inuit-images/base.images";
+@import "base.page";
+@import "base.type";
+@import "base.hr";
+@import "base.images";
+@import "base.table";
+
+
+//
+// OBJECTS
+//
+$inuit-enable-pack--auto: true;
+$inuit-enable-flag--top: true;
+$inuit-enable-flag--rev: true;
+$inuit-list-ui-padding: $spacing-unit;
+$inuit-list-ui-border-width: 0;
+@import "../bower_components/inuit-list-inline/objects.list-inline";
+@import "../bower_components/inuit-list-ui/objects.list-ui";
+@import "../bower_components/inuit-pack/objects.pack";
+@import "../bower_components/inuit-layout/objects.layout";
+@import "../bower_components/inuit-flag/objects.flag";
+@import "objects.wrapper";
+@import "objects.chapter";
+@import "objects.article";
+@import "objects.vertically-centered";
+@import "objects.list-ui";
+@import "objects.list-inline";
+
+.link-block {
+    display: block;
+    color: inherit;
+}
+
+
+//
+// COMPONENTS
+//
+.site-head {
+    @include media-query('tablet') {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+@import "components.site-nav";
+@import "components.site-content";
+@import "components.browser";
+.masthead {
+    .heading {
+        margin: 0;
+    }
+    .subheading {
+        margin: 0;
+        color: $color-text;
+    }
+}
+
+
+//
+// TRUMPS
+//
+$inuit-widths-columns: (12);
+$inuit-enable-margins: true;
+$inuit-enable-margins--large: true;
+$inuit-enable-margins--negative: true;
+$inuit-enable-margins--negative-large: true;
+@import "../bower_components/inuit-widths/trumps.widths";
+@import "../bower_components/inuit-spacing/trumps.spacing";

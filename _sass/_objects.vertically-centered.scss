@@ -1,0 +1,15 @@
+.vertically-centered {
+    position: relative;
+    height: 100%;
+}
+    .vertically-centered__content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        @include vendor(transform, translateY(-50%));
+
+        .vertically-centered--ish & {
+            top: 35%;
+            @include vendor(transform, translateY(-35%));
+        }
+    }

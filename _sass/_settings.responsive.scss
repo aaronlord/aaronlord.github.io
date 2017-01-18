@@ -1,0 +1,7 @@
+$breakpoints : join($breakpoints, (
+    'mobile'    : 'screen and (min-width: 360px)',
+    'tablet'    : 'screen and (min-width: 600px)',
+    'tablet-hd' : 'screen and (min-width: 768px)',
+    'desk'      :  'screen and (min-width: 1024px)',
+    'desk-hd'   : 'screen and (min-width: 1366px)',
+));
