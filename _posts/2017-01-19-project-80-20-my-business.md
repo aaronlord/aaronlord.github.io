@@ -49,17 +49,39 @@ That being said, here are some examples of what kind of business decisions the r
 - Who is the most profitable employee (or department)
 - and so on...
 
+Paying users can dive deeper into analysis with the ability to add variable margins, expenses and overheads.
+This enables them to see more accurate and relevant results from their sales data.
+
+##### Processing
+
+Users spreadsheets can be quite large, and would certainly cause long delays and/or timeout problems if analysis was done synchronously. So, analysis is run in the
+background - while the user is either watching the video, or has left the site to do something else (we email them when it's done).
+
+The algorithm for processing each analysis is is quite long and complex, but early on I noticed that each analysis (initial, variable margins, expenses
+and overheads) shared a common set of "tasks", the main differences being: a change in the order of the tasks or addition/removal of tasks.
+
+Based on this, I developed a system where the analyses are essentially boiled down to become instruction sheets. Each task works as a standalone process and
+is simply called when instructed. For example:
+
+```
+Analysis        | Tasks
+--------------------------------
+Initial         | A, B, C
+Variable margin | A, D, B, C
+Expense         | A, E, C, B
+Overheads       | A, E, D, C, B
+```
+
 #### Subscription
 
 {% include components/browser.html src="/img/blog/project-80-20-my-business/plans.png" alt="80/20 MyBusiness - Plans" url="https://8020mybusiness.com/costs" %}
 
-Paying users can dive deeper into analysis with the ability to add variable margins, expenses and overheads.
-This enables them to see more accurate and relevant results from their sales data.
-
-Users can upgrade/downgrade any time on a monthly rolling basis.
+Users can upgrade/downgrade any time on a monthly rolling basis - however, they will lose access to the deeper analysis they've run when downgrading.
 
 ### Final words
 
-This is version 1 of the product. 80/20 MyBusiness have plans to keep expanding functionality throughout 2017 and beyond.
+I worked closely with LYD through prototyping, testing, building and eventually roll out to create this first version of the product.
+
+80/20 MyBusiness have plans to keep expanding functionality throughout 2017 and beyond.
 
 I'm looking forward to seeing where the product goes, and will hopefully be along for the ride.
