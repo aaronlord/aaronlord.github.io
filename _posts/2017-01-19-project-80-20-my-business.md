@@ -60,7 +60,7 @@ background - while the user is either watching the video, or has left the site t
 The algorithm for processing each analysis is is quite long and complex, but early on I noticed that each analysis (initial, variable margins, expenses
 and overheads) shared a common set of "tasks", the main differences being: a change in the order of the tasks or addition/removal of tasks.
 
-Based on this, I developed a system where the analyses are essentially boiled down to become instruction sheets. Each task works as a standalone process and
+Based on this, I developed a system where the analyses are essentially boiled down to become instructions - each task works as a standalone process and
 is simply called when instructed. For example:
 
 ```
