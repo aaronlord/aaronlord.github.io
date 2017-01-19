@@ -32,15 +32,15 @@ From then, folk have noticed the pareto principle popping up all over the place:
 80/20 MyBusiness is an online statistical analysis tool, based on the pareto principle. The goal is to
 provide evidence and advice aimed towards improving business performance.
 
-All the user has to do is upload a spreadsheet of sales data and kicking back while the algorithm crunches the numbers.
+All the user has to do is upload a spreadsheet of sales data and kick back while the algorithm crunches the numbers.
 
 #### Analysis
 
-After running analysis on sales data, the user is presented with results in three different ways: an pareto, as quadrants and as a table.
+After running analysis on sales data, the user is presented with results in three different ways: a pareto, as quadrants and as a table.
 
 {% include components/browser.html videos="video/webm:/videos/project-80-20-my-business/analysis.webm,video/mp4:/videos/project-80-20-my-business/analysis.mp4" src="/img/blog/project-80-20-my-business/pareto.jpg" alt="80/20 MyBusiness - Analysis" url="https://8020mybusiness.com/" %}
 
-It's hard to go into a lot of detail on what 80/20 MyBusiness can actually show you, because it completely depends on what data the user uploads.
+It's hard to go into a lot of detail on what 80/20 MyBusiness can actually show, because it completely depends on what data the user uploads.
 
 That being said, here are some examples of what kind of business decisions the results can guide the user into making:
 
@@ -53,8 +53,8 @@ That being said, here are some examples of what kind of business decisions the r
 
 {% include components/browser.html src="/img/blog/project-80-20-my-business/plans.png" alt="80/20 MyBusiness - Plans" url="https://8020mybusiness.com/costs" %}
 
-Paying customers can dive deeper into analysis with the ability to add variable margins, expenses and overheads.
-This enables them o see more accurate and relevant results from their sales data.
+Paying users can dive deeper into analysis with the ability to add variable margins, expenses and overheads.
+This enables them to see more accurate and relevant results from their sales data.
 
 Users can upgrade/downgrade any time on a monthly rolling basis.
 
