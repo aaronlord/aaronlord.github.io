@@ -1,15 +1,14 @@
 title: aaron.codes
 email: hire@aaron.codes
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I'm an experienced full stack developer from the UK,
+  specialising in Laravel and Vue.
 baseurl: ""
 url: "https://aaron.codes"
 email: hire@aaron.codes
 twitter_username: _aaronlord
 github_username:  aaronlord
-coding_since: 2007
+coding_since: 2010
 
 excerpt_separator: <!-- excerpt -->
 permalink: /:title

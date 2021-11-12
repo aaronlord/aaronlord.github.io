@@ -17,6 +17,22 @@ module.exports = {
                 DEFAULT: {
                     css: {
                         color: theme('colors.gray.500'),
+                        h2: {
+                            fontFamily: theme('fontFamily.display'),
+                            borderBottomWidth: theme('borderWidth.DEFAULT'),
+                            borderColor: theme('colors.gray.200'),
+                            lineHeight: theme('lineHeight.10'),
+                        },
+                        h3: {
+                            fontFamily: theme('fontFamily.display'),
+                            lineHeight: theme('lineHeight.10'),
+                        },
+                        ul: {
+                            li: {
+                                marginTop: theme('spacing.0'),
+                                marginBottom: theme('spacing.0'),
+                            },
+                        },
                         blockquote: {
                             p: {
                                 fontFamily: theme('fontFamily.display'),
