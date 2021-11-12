@@ -2,7 +2,7 @@
 name: post
 layout: post
 title: "Trackday Trader"
-tags: feature
+tags: hidden
 ---
 
 {% include browser.html src="/img/trackdaytrader.jpg" alt="Trackday Trader" url="https://trackdaytrader.co.uk/" %}
