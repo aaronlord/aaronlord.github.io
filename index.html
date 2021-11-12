@@ -8,40 +8,41 @@ permalink: /
 
 <div class="px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-prose">
-        <div class="py-16 overflow-hidden bg-white">
+        <div class="py-16 overflow-hidden">
             <div class="text-lg">
                 <h1>
-                    <a href="/" class="block text-4xl font-bold text-center text-gray-900 font-display leading-8 sm:text-5xl">
+                    <a href="/" class="block text-4xl font-bold text-center text-gray-900 font-display leading-8 sm:text-5xl dark:text-white">
                         Hey, I'm Aaron
                     </a>
 
-                    <a href="javascript:window.location.href = 'mailto:' + ['hire','aaron.codes'].join('@')" class="block mt-3 text-base tracking-wide text-center text-gray-500">
+                    <a href="javascript:window.location.href = 'mailto:' + ['hire','aaron.codes'].join('@')" class="block mt-3 text-base tracking-wide text-center text-gray-500 dark:text-gray-200">
                         hire<span class="hidden">antispam</span>@<span class="hidden">antispam</span>aaron.codes
                     </a>
                 </h1>
 
-                <p class="mt-8 text-xl text-gray-500 prose leading-8">
+                <p class="mt-8 text-xl prose dark:prose-dark leading-8">
                     I'm a <strong>full stack</strong> web developer, based in the UK. I've got a great deal to offer and I'm
                     extremely passionate about my work.
                 </p>
             </div>
 
-            <div class="mt-6 text-gray-500 space-y-6">
+            <div class="mt-6 space-y-6">
                 <p>
-                    Over the past <attr class="text-gray-900 border-b border-dashed border-gray-900 cursor-help" title="Since {{ site.coding_since }}">{{ coding_for }} years</attr>, I’ve
+                    Over the past <attr class="text-gray-900 border-b border-gray-900 border-dashed dark:text-white dark:border-white cursor-help" title="Since {{ site.coding_since }}">{{ coding_for }} years</attr>, I’ve
                     worked with a number of frameworks, libraries and tools, in teams of various sizes. I am currently enjoying building single-page applications with
-                    <a class="text-gray-900 underline" href="https://laravel.com/">Laravel</a>,
-                    <a class="text-gray-900 underline" href="https://vuejs.org/">Vue</a> and
-                    <a class="text-gray-900 underline" href="https://tailwindcss.com/">Tailwind</a>.
+                    <a class="text-gray-900 underline dark:text-white" href="https://laravel.com/">Laravel</a>,
+                    <a class="text-gray-900 underline dark:text-white" href="https://vuejs.org/">Vue</a> and
+                    <a class="text-gray-900 underline dark:text-white" href="https://tailwindcss.com/">Tailwind</a>.
                 </p>
 
                 <p>I follow best practices, including; compliance with relevant coding standards (e.g. fig), adhere to SOLID principles, leverage Dependency Injection and Service layers patterns.</p>
 
                 <p>Essentially, I write DRY reusable, testable &amp; decoupled code. I'm obsessed with learning new things and I'm able to pick up new languages, abilities, patterns, principles and styles very quickly and easily.</p>
 
-                <p>Outside of coding, I <a class="text-gray-900 underline" href="/racing">race motorbikes</a> and play squash.</p>
+                <p>Outside of coding, I <a class="text-gray-900 underline dark:text-white" href="/racing">race motorbikes</a> and play squash.</p>
             </div>
 
+            <!-- not dark styled! -->
             <div class="hidden mt-6">
                 <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
                     Laravel
@@ -111,16 +112,16 @@ permalink: /
             <div class="mt-12 space-y-12">
                 {% for post in site.tags.feature %}
                     <div class="mt-6">
-                        <h6 class="text-3xl font-bold leading-loose text-gray-900 border-b font-display">
+                        <h6 class="text-3xl font-bold leading-loose text-gray-900 border-b dark:text-white font-display">
                             {{ post.title }}
                         </h6>
 
-                        <div class="mt-6 mb-2 text-gray-500 prose">
+                        <div class="mt-6 mb-2 prose dark:prose-dark">
                             {{ post.excerpt }}
                         </div>
 
                         {% if post.excerpt != post.content %}
-                            <a class="text-sm text-gray-500 underline" href="{{ post.url | prepend: site.baseurl }}">
+                            <a class="text-sm underline" href="{{ post.url | prepend: site.baseurl }}">
                                 Read the blog post
                             </a>
                         {% endif %}

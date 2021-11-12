@@ -5,7 +5,7 @@ module.exports = {
         './_posts/*.md',
         './*.html',
     ],
-    darkMode: false,
+    darkMode: 'media', // 'class'
     theme: {
         extend: {
             fontFamily: {
@@ -16,10 +16,11 @@ module.exports = {
             typography: (theme) => ({
                 DEFAULT: {
                     css: {
+                        color: theme('colors.gray.500'),
                         blockquote: {
                             p: {
                                 fontFamily: theme('fontFamily.display'),
-                                color: theme('colors.gray.600'),
+                                color: theme('colors.gray.500'),
                                 fontSize: theme('fontSize.sm'),
                             },
                             div: {
@@ -28,16 +29,39 @@ module.exports = {
                             },
                             cite: {
                                 fontSize: theme('fontSize.sm'),
-                                color: theme('colors.gray.500'),
+                                color: theme('colors.gray.400'),
                             }
                         }
                     },
                 },
+                dark: {
+                    css: {
+                        color: theme('colors.gray.200'),
+                        h2: {
+                            color: theme('colors.white')
+                        },
+                        h3: {
+                            color: theme('colors.white')
+                        },
+                        strong: {
+                            color: theme('colors.white')
+                        },
+                        blockquote: {
+                            p: {
+                                color: theme('colors.gray.200'),
+                            },
+                            cite: {
+                                color: theme('colors.gray.300'),
+                            }
+                        },
+                    }
+                }
             })
         },
     },
     variants: {
         extend: {
+            typography: ['dark'],
             textColor: ['important'],
             textDecoration: ['important'],
             margin: ['important'],
