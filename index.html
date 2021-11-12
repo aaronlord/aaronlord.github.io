@@ -4,6 +4,8 @@ title: Freelance Web Developer / Laravel &amp; Vue
 permalink: /
 ---
 
+{% assign coding_for = site.time | date: '%Y' | minus: site.coding_since %}
+
 <div class="px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-prose">
         <div class="py-16 overflow-hidden bg-white">
@@ -19,16 +21,28 @@ permalink: /
                 </h1>
 
                 <p class="mt-8 text-xl text-gray-500 prose leading-8">
-                    I'm a talented <strong>full stack</strong> web developer, based in the UK. I've got a great deal to offer and I'm
-                    extremely passionate about <em>our</em> work.
+                    I'm a <strong>full stack</strong> web developer, based in the UK. I've got a great deal to offer and I'm
+                    extremely passionate about my work.
                 </p>
             </div>
 
-            <div class="mt-6 text-gray-500 prose prose-lg">
-                <p>Maecenas porta lorem non lectus porttitor, blandit venenatis nulla molestie. Sed ac nisl libero. Fusce dignissim eros sed odio tincidunt rutrum.</p>
+            <div class="mt-6 text-gray-500 space-y-6">
+                <p>
+                    Over the past <attr class="text-gray-900 border-b border-dashed border-gray-900 cursor-help" title="Since {{ site.coding_since }}">{{ coding_for }} years</attr>, I’ve
+                    worked with a number of frameworks, libraries and tools, in teams of various sizes. I am currently enjoying building single-page applications with
+                    <a class="text-gray-900 underline" href="https://laravel.com/">Laravel</a>,
+                    <a class="text-gray-900 underline" href="https://vuejs.org/">Vue</a> and
+                    <a class="text-gray-900 underline" href="https://tailwindcss.com/">Tailwind</a>.
+                </p>
+
+                <p>I follow best practices, including; compliance with relevant coding standards (e.g. fig), adhere to SOLID principles, leverage Dependency Injection and Service layers patterns.</p>
+
+                <p>Essentially, I write DRY reusable, testable &amp; decoupled code. I'm obsessed with learning new things and I'm able to pick up new languages, abilities, patterns, principles and styles very quickly and easily.</p>
+
+                <p>Outside of coding, I <a class="text-gray-900 underline" href="/racing">race motorbikes</a> and play squash.</p>
             </div>
 
-            <div class="mt-6">
+            <div class="hidden mt-6">
                 <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
                     Laravel
                 </span>

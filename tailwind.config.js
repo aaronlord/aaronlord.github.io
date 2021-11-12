@@ -40,6 +40,7 @@ module.exports = {
         extend: {
             textColor: ['important'],
             textDecoration: ['important'],
+            margin: ['important'],
         }
     },
     plugins: [
