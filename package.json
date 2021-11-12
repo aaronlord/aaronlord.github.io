@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "serve": "concurrently --kill-others \"npm run tailwind:dev\" \"bundle exec jekyll serve --livereload\"",
+        "tailwind:dev": "npx tailwindcss -i css/tailwind.css -o dist/tailwind.css --watch",
+        "tailwind:build": "NODE_ENV=production npx tailwindcss -i css/tailwind.css -o dist/tailwind.css --minify",
+        "build": "npm run tailwind:build && bundle exec jekyll build"
+    },
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.4.1",
+        "autoprefixer": "^10.4.0",
+        "concurrently": "^6.3.0",
+        "postcss": "^8.3.11",
+        "postcss-import": "^14.0.2",
+        "tailwindcss": "^2.2.19"
+    }
+}

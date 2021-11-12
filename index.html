@@ -1,0 +1,118 @@
+---
+layout: default
+title: Freelance Web Developer / Laravel &amp; Vue
+permalink: /
+---
+
+<div class="px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-prose">
+        <div class="py-16 overflow-hidden bg-white">
+            <div class="text-lg">
+                <h1>
+                    <a href="/" class="block text-4xl font-bold text-center text-gray-900 font-display leading-8 sm:text-5xl">
+                        Hey, I'm Aaron
+                    </a>
+
+                    <a href="javascript:window.location.href = 'mailto:' + ['hire','aaron.codes'].join('@')" class="block mt-3 text-base tracking-wide text-center text-gray-500">
+                        hire<span class="hidden">antispam</span>@<span class="hidden">antispam</span>aaron.codes
+                    </a>
+                </h1>
+
+                <p class="mt-8 text-xl text-gray-500 prose leading-8">
+                    I'm a talented <strong>full stack</strong> web developer, based in the UK. I've got a great deal to offer and I'm
+                    extremely passionate about <em>our</em> work.
+                </p>
+            </div>
+
+            <div class="mt-6 text-gray-500 prose prose-lg">
+                <p>Maecenas porta lorem non lectus porttitor, blandit venenatis nulla molestie. Sed ac nisl libero. Fusce dignissim eros sed odio tincidunt rutrum.</p>
+            </div>
+
+            <div class="mt-6">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    Laravel
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    Vue
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    REST API
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    Tailwind CSS
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    SPA
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    PHPUnit
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    Dusk
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    Docker
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    GIT
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    PSR Coding Standard
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    Vim
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    MVC
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    MySQL
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    DB Design
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    TDD
+                </span>
+
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                    SOLID
+                </span>
+            </div>
+
+            <div class="mt-12 space-y-12">
+                {% for post in site.tags.feature %}
+                    <div class="mt-6">
+                        <h6 class="text-3xl font-bold leading-loose text-gray-900 border-b font-display">
+                            {{ post.title }}
+                        </h6>
+
+                        <div class="mt-6 mb-2 text-gray-500 prose">
+                            {{ post.excerpt }}
+                        </div>
+
+                        {% if post.excerpt != post.content %}
+                            <a class="text-sm text-gray-500 underline" href="{{ post.url | prepend: site.baseurl }}">
+                                Read the blog post
+                            </a>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
