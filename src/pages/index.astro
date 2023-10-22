@@ -27,3 +27,22 @@ const sections = await getCollection('sections');
         </div>
     </div>
 </Html>
+
+<script>
+    document.querySelectorAll('video').forEach(video => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.play();
+                } else {
+                    entry.target.pause();
+                }
+            });
+        },
+        {
+            threshold: 0.01
+        });
+
+        observer.observe(video);
+    });
+</script>

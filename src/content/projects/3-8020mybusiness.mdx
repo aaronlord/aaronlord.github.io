@@ -6,7 +6,7 @@ import Browser from '../../components/Browser.astro';
 import analysis from '../../images/8020mybusiness/analysis.jpg';
 
 <Browser url="https://8020mybusiness.com/">
-    <video autoplay loop muted class="m-0" client:visible>
+    <video preload="none" loop muted disablepictureinpicture class="m-0">
         <source type="video/webm" src="/videos/projects/8020mybusiness/analysis.webm" />
         <source type="video/mp4" src="/videos/projects/8020mybusiness/analysis.mp4" />
         <Image src={analysis} alt="80/20 MyBusiness - Analysis" />

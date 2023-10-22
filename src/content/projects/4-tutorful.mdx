@@ -6,7 +6,7 @@ import Browser from '../../components/Browser.astro';
 import search from '../../images/tutorful/search.jpg';
 
 <Browser url="https://tutorful.co.uk/">
-    <video autoplay loop muted class="m-0" client:visible>
+    <video preload="none" loop muted disablepictureinpicture class="m-0">
         <source type="video/webm" src="/videos/projects/tutorful/search.webm" />
         <source type="video/mp4" src="/videos/projects/tutorful/search.mp4" />
         <Image src={search} alt="Tutorful - Search" />
