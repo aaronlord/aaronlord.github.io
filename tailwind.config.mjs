@@ -6,22 +6,22 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
-                'serif': ['Merriweather', ...defaultTheme.fontFamily.serif],
-                'mono': ['Roboto Mono', ...defaultTheme.fontFamily.mono],
+                'sans': 'Roboto',
+                'serif': 'Merriweather',
+                'mono': 'Roboto Mono',
             },
             typography: (theme) => ({
                 DEFAULT: {
                     css: {
                         color: theme('colors.gray.600'),
                         h2: {
-                            fontFamily: 'Merriweather, Georgia',
+                            fontFamily: 'Merriweather',
                             borderBottomWidth: theme('borderWidth.DEFAULT'),
                             borderColor: theme('colors.gray.200'),
                             lineHeight: theme('lineHeight.10'),
                         },
                         h3: {
-                            fontFamily: 'Merriweather, Georgia',
+                            fontFamily: 'Merriweather',
                             lineHeight: theme('lineHeight.10'),
                         },
                         ul: {

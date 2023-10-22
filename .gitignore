@@ -1,5 +1,6 @@
 # build output
 dist/
+public/astro-fontaine/
 # generated types
 .astro/
 
