@@ -1,0 +1,21 @@
+---
+title: Keystrok.es
+---
+import { Image } from 'astro:assets';
+import Browser from '../../components/Browser.astro';
+import overview from '../../images/keystrokes/overview.jpg';
+
+<Browser url="https://keystrok.es/">
+    <video autoplay loop muted class="m-0" client:visible>
+        <source type="video/webm" src="/videos/projects/keystrokes/overview.webm" />
+        <source type="video/mp4" src="/videos/projects/keystrokes/overview.mp4" />
+        <Image src={overview} alt="Keystrok.es - Overview" />
+    </video>
+</Browser>
+
+Touch typing is amazing. I made keystrokes.io to teach it to the masses, in a
+fun way.
+
+This was the first large personal project I started, written in Backbone.js,
+with a custom Node.js backend, users could learn how to type on their own, or
+join a race and be matched with users across the world.

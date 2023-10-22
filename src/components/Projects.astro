@@ -1,0 +1,10 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Project from './Project.astro';
+const projects = await getCollection('projects');
+---
+<div class="mt-6 space-y-12">
+    {projects.map(project => (
+        <Project project={project} />
+    ))}
+</div>

@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Html from '../layouts/Html.astro';
+import Section from '../components/Section.astro';
+
+const sections = await getCollection('sections');
+---
+<Html title={SITE_TITLE} description={SITE_DESCRIPTION}>
+    <div class="px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-prose">
+            <div class="pt-16 pb-32 overflow-hidden">
+                <h1>
+                    <a href="/" class="block text-4xl font-bold text-center text-gray-900 font-serif leading-8 sm:text-5xl">
+                        Hey, I'm Aaron
+                    </a>
+
+                    <a href="javascript:window.location.href = 'mailto:' + ['hire','aaron.codes'].join('@')" class="block mt-3 text-base tracking-wide text-center text-gray-600">
+                        hire<span class="hidden">antispam</span>@<span class="hidden">antispam</span>aaron.codes
+                    </a>
+                </h1>
+
+                {sections.map(section => (
+                    <Section section={section} />
+                ))}
+            </div>
+        </div>
+    </div>
+</Html>

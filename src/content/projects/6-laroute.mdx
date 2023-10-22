@@ -1,0 +1,22 @@
+---
+title: Laroute
+---
+import { Image } from 'astro:assets';
+import Browser from '../../components/Browser.astro';
+import github from '../../images/laroute/github.jpg';
+
+<Browser url="https://github.com/aaronlord/laroute">
+    <Image src={github} alt="Laroute - GitHub" />
+</Browser>
+
+Laravel has some pretty sweet helper functions for generating urls/links and its
+auto-json-magic makes it building APIs super easy. It's the go-to choice for
+building single-page js apps for me and many others, but routing can quickly
+become a bit of a pain.
+
+This package allows you to port your routes over to JavaScript, and gives us a
+bunch of very familiar helper functions to use.
+
+> [Generate Laravel route URLs from JavaScript... neat little package](https://twitter.com/taylorotwell/status/446829096018796546)
+>
+> <div><cite>Taylor Otwell, Founder & CEO @ Laravel</cite></div>

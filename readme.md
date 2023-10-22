@@ -1,5 +1,0 @@
-- Install Ruby via RVM (Currently using 2.7.2)
-- Install Node via NVM
-- Install Jekyll dependencies (https://jekyllrb.com/docs/)
-- bundle install
-- npm install

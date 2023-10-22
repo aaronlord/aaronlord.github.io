@@ -1,0 +1,30 @@
+---
+title: 80/20 MyBusiness
+---
+import { Image } from 'astro:assets';
+import Browser from '../../components/Browser.astro';
+import analysis from '../../images/8020mybusiness/analysis.jpg';
+
+<Browser url="https://8020mybusiness.com/">
+    <video autoplay loop muted class="m-0" client:visible>
+        <source type="video/webm" src="/videos/projects/8020mybusiness/analysis.webm" />
+        <source type="video/mp4" src="/videos/projects/8020mybusiness/analysis.mp4" />
+        <Image src={analysis} alt="80/20 MyBusiness - Analysis" />
+    </video>
+</Browser>
+
+80/20 MyBusiness is one of the more interesting projects I've worked on.
+
+This online statistical analysis tool, based on the pareto principle, provide
+evidence and advice aimed towards improving business performance - all you do is
+upload a spreadsheet of sales data and kick back while the algorithm crunches
+the numbers.
+
+I worked closely with LYD through prototyping, testing, building and eventually
+roll out to create this first version of the product.
+
+> I have always found him to be an exceptional developer, with an ability to not
+> only understand projects, but to integrate every aspect of them, challenging
+> and contributing in a manner that makes him an a highly valued individual.
+>
+> <div><cite>Lawrence Evarard, Design Principal @ Little Yellow Duck</cite></div>
