@@ -4,8 +4,9 @@ import { SITE_TITLE } from '../../consts';
 import Html from '../../layouts/Html.astro';
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('blog');
-  return blogEntries.map(entry => ({
+  const posts = await getCollection('blog');
+
+  return posts.map(entry => ({
     params: { slug: entry.slug }, props: { entry },
   }));
 }
