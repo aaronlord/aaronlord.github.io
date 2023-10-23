@@ -12,14 +12,14 @@ export default defineConfig({
         tailwind(),
         fontaine({
             remoteFontFaceStylesheetURLs: [
-                'https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=fallback'
+                'https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono&display=fallback'
             ],
             fonts: [
                 {
                     family: 'Roboto',
                 },
                 {
-                    family: 'Roboto Mono',
+                    family: 'Ubuntu Mono',
                 },
                 {
                     family: 'Merriweather',

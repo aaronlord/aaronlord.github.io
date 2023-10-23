@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content';
+import { SITE_TITLE } from '../../consts';
+import Html from '../../layouts/Html.astro';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+<Html title={`${entry.data.title} / Blog / ${SITE_TITLE}`} description={entry.data.description}>
+    <div class="px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-prose relative">
+            <a href="/blog" class="block mt-3 text-base tracking-wide text-gray-600 absolute left-1/2 transform -translate-x-1/2">
+                ~/blog
+            </a>
+
+            <div class="pt-16 pb-32 overflow-hidden">
+                <h1 class="block text-3xl font-bold text-center text-gray-900 font-serif leading-8 sm:text-4xl">
+                    {entry.data.title}
+                </h1>
+
+                <div class="mt-6 prose">
+                    <Content />
+                </div>
+            </div>
+        </div>
+    </div>
+</Html>

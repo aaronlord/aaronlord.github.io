@@ -1,11 +1,38 @@
+---
+interface Props {
+    title: string;
+    description: string;
+}
+
+const { title, description } = Astro.props;
+---
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Freelance Web Developer / Laravel &amp; Vue / aaron.codes</title>
-        <meta name="description" content="I'm an experienced full stack developer from the UK, specialising in Laravel and Vue.">
+        <title>{title}</title>
+        <meta name="description" content={description}>
     </head>
     <body class="text-gray-700">
         <slot />
     </body>
 </html>
+
+<script>
+    document.querySelectorAll('video').forEach(video => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.play();
+                } else {
+                    entry.target.pause();
+                }
+            });
+        },
+        {
+            threshold: 0.01
+        });
+
+        observer.observe(video);
+    });
+</script>

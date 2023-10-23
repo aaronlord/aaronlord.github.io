@@ -8,7 +8,7 @@ export default {
             fontFamily: {
                 'sans': 'Roboto',
                 'serif': 'Merriweather',
-                'mono': 'Roboto Mono',
+                'mono': 'Ubuntu Mono',
             },
             typography: (theme) => ({
                 DEFAULT: {

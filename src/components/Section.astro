@@ -3,6 +3,4 @@ import { type CollectionEntry, getCollection } from 'astro:content';
 const { section } = Astro.props as { section: CollectionEntry<'sections'> };
 const { Content } = await section.render();
 ---
-<div>
-    <Content />
-</div>
+<Content />
