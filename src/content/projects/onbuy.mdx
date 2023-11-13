@@ -8,7 +8,12 @@ import Browser from '../../components/Browser.astro';
 import homepage from '../../images/onbuy/homepage.png';
 
 <Browser url="https://onbuy.com/gb/">
-    <Image src={homepage} width="600" densities={[1.5, 2]} alt="OnBuy" />
+    <Image
+        src={homepage}
+        widths={[300, 600, 1200]}
+        sizes="(min-width: 660px) 582px, 92.94vw"
+        alt="OnBuy"
+    />
 </Browser>
 
 This is a test.

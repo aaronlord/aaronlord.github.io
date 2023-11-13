@@ -7,7 +7,12 @@ import Browser from '../../components/Browser.astro';
 import homepage from '../../images/rentora/homepage.png';
 
 <Browser url="https://rentora.co.uk/">
-    <Image src={homepage} width="600" densities={[1.5, 2]} alt="Rentora" />
+    <Image
+        src={homepage}
+        widths={[300, 600, 1200]}
+        sizes="(min-width: 660px) 582px, 92.94vw"
+        alt="Rentora"
+    />
 </Browser>
 
 Rentora is a property management and rent collection tool for landlords and

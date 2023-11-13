@@ -7,7 +7,12 @@ import Browser from '../../components/Browser.astro';
 import homepage from '../../images/hilti/homepage.png';
 
 <Browser url="https://ask.hilti.co.uk/">
-    <Image src={homepage} width="600" densities={[1.5, 2]} alt="Ask Hilti - Homepage" />
+    <Image
+        src={homepage}
+        widths={[300, 600, 1200]}
+        sizes="(min-width: 660px) 582px, 92.94vw"
+        alt="Ask Hilti - Homepage"
+    />
 </Browser>
 
 Hilti tasked a small team of internal developers with building Ask Hilti - an education and community portal
