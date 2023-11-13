@@ -11,7 +11,7 @@ const { url } = Astro.props;
         <div class="w-3 h-3 bg-yellow-300 rounded-full"></div>
         <div class="w-3 h-3 bg-green-300 rounded-full"></div>
 
-        <div class="flex-grow px-4 py-1 text-sm leading-none bg-white rounded">
+        <div class="flex-grow px-4 py-1 text-sm leading-none bg-white rounded overflow-hidden truncate">
             <a href={url} class="no-underline text-gray-500">
                 {url}
             </a>
