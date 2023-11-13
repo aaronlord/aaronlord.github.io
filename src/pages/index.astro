@@ -4,7 +4,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import Html from '../layouts/Html.astro';
 import Section from '../components/Section.astro';
 
-const sections = await getCollection('sections');
+const sections = await getCollection('sections', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
 ---
 <Html title={SITE_TITLE} description={SITE_DESCRIPTION}>
     <div class="px-4 sm:px-6 lg:px-8">

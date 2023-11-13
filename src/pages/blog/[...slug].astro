@@ -4,11 +4,13 @@ import { SITE_TITLE } from '../../consts';
 import Html from '../../layouts/Html.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+    const posts = await getCollection('blog', ({ data }) => {
+      return import.meta.env.PROD ? data.draft !== true : true;
+    });
 
-  return posts.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
-  }));
+    return posts.map(entry => ({
+        params: { slug: entry.slug }, props: { entry },
+    }));
 }
 
 const { entry } = Astro.props;

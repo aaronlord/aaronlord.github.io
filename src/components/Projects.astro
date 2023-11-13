@@ -1,7 +1,9 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Project from './Project.astro';
-const projects = await getCollection('projects');
+const projects = await getCollection('projects', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
 ---
 <div class="mt-6 space-y-12">
     {projects.map(project => (
