@@ -1,0 +1,12 @@
+---
+import { CODING_SINCE } from '../consts';
+
+interface Props {
+    plural: boolean;
+}
+
+const { plural } = Astro.props;
+---
+<abbr title={`Since ${CODING_SINCE}`} class="cursor-help">
+    {new Date().getFullYear() - CODING_SINCE} year{plural ? 's' : ''}
+</abbr>
